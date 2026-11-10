@@ -5,6 +5,14 @@
   padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    background-color: #333333;
+}
+
 /* hele header svart bakgrunn */
 .header {
     background-color: #333333;
@@ -12,10 +20,6 @@
     left: 0;
     top: 0;
     z-index: 999;
-}
-
-html, body {
-    background-color: #333333;
 }
 
 /* header container styling for tekst og logo */
@@ -64,8 +68,16 @@ html, body {
     /*bildet og tekst settings*/
     position: relative;
     color: white;
-    object-fit: cover;
     z-index: 0;
+}
+
+.hero-background img {
+    /*bildet settings*/
+    width: 100%;
+    max-width: 100%;
+    max-height: 100vh;
+    height: auto;
+    object-fit: cover;
 }
 
 .hero-text {
@@ -75,7 +87,7 @@ html, body {
 
     /*sentrert text hvor d e 50% av toppen på parent og 50% til venste av parent, transform brukes for å centrere text sånt at gjørne ikke er midten men texten er*/
     position: absolute;
-    top:50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -96,15 +108,20 @@ html, body {
     border-radius: 50px;
 }
 
-
-
-img {
-    /*setter opp sånt at alle bilder fyller skjermen når du scroller nedover*/
-    max-width: 100%;
-    width: 100%;
-    height: 100vh;
-
+.informasjonsteknologi, .calisthenics, .gaming{
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 100px;
 }
+
+.informasjonsteknologi p, .calisthenics p, .gaming p {
+    margin-bottom: 20px;
+}  
+
+.informasjonsteknologi h1, .calisthenics h1, .gaming h1 {
+    margin-bottom: 20px;
+}
+
 
 h1 {
     color: white;
@@ -114,7 +131,12 @@ p {
     color: white;
 }
 
-
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: cover;
+}
 
 
 
