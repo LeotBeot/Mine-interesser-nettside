@@ -41,8 +41,8 @@ html, body {
     list-style-type: none;
 }
 
-.logo{
-    /*text formatting for logo*/
+.lenker a {
+    /*text formatting for lenker*/
     color: white;
     text-decoration: none;
     font-family: arial, sans-serif;
@@ -50,17 +50,9 @@ html, body {
     font-weight: bold;
 }
 
-.lenker a {
-    /*text formatting for lenker*/
-    color: white;
-    text-decoration: none;
-    font-family: arial, sans-serif;
-    font-size: 18px;
-}
-
 .lenker a:hover {
     /*lenker blir på hover*/
-    color: #7876f5;
+    color: #CCCCCC;
 }
 
 .kontaktinfo {

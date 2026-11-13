@@ -5,15 +5,17 @@
   padding: 0;
 }
 
+/* Gjøre sånt at scroll er smooth når man trykker på lenker*/
 html {
     scroll-behavior: smooth;
 }
 
+/* hele nettside bakgrunn */
 html, body {
     background-color: #333333;
 }
 
-/* hele header svart bakgrunn */
+/* hele header bakgrunn */
 .header {
     background-color: #262626;
     position: sticky;
@@ -35,6 +37,7 @@ html, body {
 
 }
 
+/* styling for logo bildet i header */
 .header-container img {
     max-width: 70px;
     height: auto;
@@ -53,26 +56,18 @@ html, body {
     gap: 20px;
 }
 
-.logo{
-    /*text formatting for logo*/
-    color: white;
-    text-decoration: none;
-    font-family: arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-}
-
 .lenker a {
     /*text formatting for lenker*/
     color: white;
     text-decoration: none;
-    font-family: arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .lenker a:hover {
-    /*lenker blir på hover*/
-    color: #7876f5;
+    /*lenker blir #CCCCCC på hover*/
+    color: #CCCCCC;
 }
 
 
@@ -98,13 +93,14 @@ html, body {
     font-size: clamp(1rem, 5vw, 3rem);
     white-space: nowrap;
 
-    /*sentrert text hvor d e 50% av toppen på parent og 50% til venste av parent, transform brukes for å centrere text sånt at gjørne ikke er midten men texten er*/
+    /*sentrert text hvor d e 45% av toppen på parent og 50% til venste av parent, transform brukes for å sentrere text sånt at gjørne ikke er midten men midten av texten er*/
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+/*Om meg sekskjon styling*/
 .about {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -114,6 +110,7 @@ html, body {
     color: white;
 }
 
+/*Om meg boks styling*/
 .ommegboks {
     display: inline-block;
     max-width: 100%;
@@ -124,12 +121,14 @@ html, body {
     margin-top: 20px;
 }
 
+/*Om meg header*/
 .about h1 {
     font-size: 50px;
     margin-bottom: px;
     margin-top: 400px;
 }
 
+/*styling for interesser seksjoner*/
 .informasjonsteknologi, .calisthenics, .gaming{
     text-align: center;
     font-family: arial, sans-serif;
@@ -137,6 +136,7 @@ html, body {
     margin-top: 50px;
 }
 
+/*margins for interesser text og headers*/
 .informasjonsteknologi p, .calisthenics p, .gaming p {
     margin-bottom: 20px;
 }  
@@ -145,13 +145,13 @@ html, body {
     margin-bottom: 20px;
 }
 
+/*Interesser overskrift tekst*/
 .interesser {
     text-align: center;
     font-family: arial, sans-serif;
     font-size: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
-
 
 h1 {
     color: white;
@@ -170,13 +170,37 @@ img {
 
 
 /*Gjør sånt at Interesser og Om meg seksjonene har plass over seg når man scroller ned. */
-#interesser{
+#om{
     scroll-margin-top: 350px;
 }
 
-#om{
+#interesser{
     scroll-margin-top: 100px;
 }
+
+/*Custom scroller */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #CCCCCC;
+    background: #404040;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #262626;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #404040;
+}
+
+
+
+
+
 
 
 
