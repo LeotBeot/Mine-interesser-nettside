@@ -1,12 +1,16 @@
+/* CSS reset fordi forskjellige web browsers har forskjellige standarder for spacing*/
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Gjøre sånt at scroll er smooth når man trykker på lenker*/
 html, body {
     background-color: #333333;
 }
 
+
+/* hele nettside bakgrunn */
 .header {
     background-color: #262626;
     position: sticky;
@@ -27,6 +31,7 @@ html, body {
 
 }
 
+/* styling for logo bildet i header */
 .header-container img {
     max-width: 70px;
     height: auto;
@@ -55,6 +60,7 @@ html, body {
     color: #CCCCCC;
 }
 
+/*formatering for kontaktinfo*/
 .kontaktinfo {
     text-align: center;
     font-family: arial, sans-serif;
@@ -63,12 +69,13 @@ html, body {
     
 }
 
+/*boks rundt kontaktinfo*/
 .kontaktinfoboks {
     background-color: #262626;
     padding: 30px;
-    text-decoration: none;
 }
 
+/*margins*/
 .kontaktinfoboks h1 {
     margin-bottom: 20px;
 }
